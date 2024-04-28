@@ -1,0 +1,11 @@
+<html>
+<body>
+This should be available without logging in
+
+<form method="post" action="/public">
+    <input name="data" type="text"/>
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+    <button type="submit">Send data</button>
+</form>
+</body>
+</html>
